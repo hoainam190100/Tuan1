@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ma=new Array(1,6,8,2,4,10,15,11);
+    function Sapxeplai() {
+        for (let j = 0; j < ma.length; j++) {
+            for (let i = j + 1; i < ma.length; i++) {
+                if (ma[i] < ma[j]) {
+                    let min = ma[i];
+                    ma[i] = ma[j];
+                    ma[j] = min;
+                }
+            }
+        }
+        document.write(mang);
+    }
+    Sapxeplai();
+</script>
+</body>
+</html>

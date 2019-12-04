@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i =0;
+    let duong = 0 ;
+    let arry=[-2,-4,-6,-7,-10,-11];
+    for (i=0;i<arry.length;i++){
+        if(arry[i]<0){
+            duong=arry[i];
+            break;
+        }
+    }
+    for( ;i<arry.length;i++){
+        if(arry[i]<0&&arry[i]> duong){
+            duong=arry[i];
+        }
+    }
+    document.write('số âm lớn nhất trong mảng là '+duong);
+
+</script>
+
+</body>
+</html>
